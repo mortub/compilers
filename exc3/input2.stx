@@ -1,0 +1,53 @@
+Type -> int
+DeclList -> id : Type ;
+Type -> int
+DeclList -> DeclList , id : Type ;
+Type -> int
+DeclList -> DeclList , id : Type ;
+Declarations -> var DeclList ;
+Factor ->  NUM
+Term ->  Factor
+Expression ->  Term
+Statement -> id <= Expression ;
+StmtList -> StmtList  Statement ;
+Factor ->  NUM
+Term ->  Factor
+Expression ->  Term
+Statement -> id <= Expression ;
+StmtList -> StmtList  Statement ;
+Factor ->  ID 
+Term ->  Factor
+Expression ->  Term
+case ->  REALOP
+Factor ->  NUM
+Term ->  Factor
+Expression ->  Term
+BoolExp ->  Expression case Expression
+Factor ->  ID 
+Term ->  Factor
+Expression ->  Term
+Statement -> put Expression ;
+StmtList -> StmtList  Statement ;
+Factor ->  ID 
+Term ->  Factor
+Expression ->  Term
+Factor ->  ID 
+Term ->  Factor
+Expression ->  Expression ADDOP Term
+Statement -> id <= Expression ;
+StmtList -> StmtList  Statement ;
+Factor ->  ID 
+Term ->  Factor
+Expression ->  Term
+Statement -> put Expression ;
+StmtList -> StmtList  Statement ;
+Factor ->  ID 
+Term ->  Factor
+Expression ->  Term
+Statement -> id <= Expression ;
+StmtList -> StmtList  Statement ;
+Factor ->  ID 
+Term ->  Factor
+Expression ->  Term
+Statement -> id <= Expression ;
+StmtList -> StmtList  Statement ;

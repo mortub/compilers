@@ -1,0 +1,15 @@
+prog fibonacci;  
+var     a: int,  
+	b: int, 
+	c: int;
+start
+	a <= 0;  
+	b <= 1;
+	loop a < 1000 do
+		put a;
+		c <= a+b;
+		put c;
+		a <= b;
+		b <= c;
+	
+endp.
